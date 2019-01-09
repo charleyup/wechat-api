@@ -7,7 +7,7 @@ const http = Axios.create({
     }
 });
 
-http.interceptors.request.use((data, headers) => {
+http.interceptors.request.use((data) => {
     return data;
 });
 
@@ -20,7 +20,7 @@ http.interceptors.response.use(response => {
     //         throw new Error(data.msg);
     // }
     return data;
-}, err => {
+}, () => {
     throw new Error("网络请求错误");
 });
 

@@ -6,6 +6,6 @@ import WeixinController from "./controller/wechat.js";
 router.prefix("/api");
 
 router.get("/", IndexController.index)
-      .get("/signature", WeixinController.signature);
+    .get("/signature", WeixinController.signature);
       
 export default router;

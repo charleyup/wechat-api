@@ -17,12 +17,12 @@ export default {
             newobj[key.toLowerCase()] = obj[key];
         });
 
-        let string = '';
+        let string = "";
         const newKeys = Object.keys(newobj);
         for (let i = 0; i < newKeys.length; i++) {
             const k = newKeys[i];
-            string += '&' + k + '=' + newobj[k];
+            string += "&" + k + "=" + newobj[k];
         }
         return string.substr(1);
     }
-}
+};
