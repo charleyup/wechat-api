@@ -7,5 +7,5 @@ yarn.lock
 coverage/
 .idea/
 .DS_Store
-/dist
+/app
 *.local.js
